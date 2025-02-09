@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- <h1>Hello World</h1>
-    <input type="text">
-    <img src="" alt="">
-
-
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div> -->
-
-
+/* 
     <!-- <style>
         div{
             width: 100px;
@@ -38,32 +21,8 @@
             background-color: aqua;
         }
     </style> -->
+    */
 
-    <div class="todo-app">
-        <div class="title">Apple's Todo App </div>
-        <div class="todo-from">
-            <input class="todo-input" type="text" placeholder="add a todo">
-            
-            <div class="todo-button">add todo</div>
-        </div>
-
-
-
-    
-        <div class="item">
-            <div>
-            <input type="checkbox">
-            <div class="name">Meal</div>
-           </div>
-           
-            <div class="del">Del</div>
-
-
-
-
-        </div>
-    </div>
-    <style>
         .item{
             display: flex;
             align-items: center;
@@ -76,7 +35,6 @@
             border-radius: 20px;
             box-shadow: rgba(149,157,165,0.2) 8px 8px 20px;
         }
-
 
         .todo-button{
             width: 100px;
@@ -94,12 +52,8 @@
             color: #ffff;
         }
 
-
-
-
-
-
         .todo-input{
+            margin-bottom: 20px;
             padding-left: 15px;
             border: 1px solid blue;
             outline: none;
@@ -108,18 +62,11 @@
             border-radius: 20px 0 0 20px;
         }
 
-
-
-
         .todo-from{
             display: flex;
             margin-top: 20px;
             margin-left: 30px;
-
         }
-
-
-
 
         body{
             background: linear-gradient(
@@ -138,7 +85,6 @@
             border-radius: 5px;
             margin-top: 40px;
             margin-left: 1%;
-
         }
 
         .title{
@@ -147,6 +93,12 @@
             font-weight: 700;
             text-align: center;
         }
-    </style>
-</body>
-</html>
+ 
+        .del{
+            color:red
+        }
+
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
