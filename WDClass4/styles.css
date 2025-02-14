@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+/* nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+} */
+
+@media screen and (max-width:768px){
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    nav ul li{
+        margin: 10px 0;
+        display:block;
+    }
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2C3E50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Buttons */
+button {
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #16A085;
+}
+
+/* Forms */
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media screen and (max-width:768px){
+    input{
+        width:100%;
+        max-width:300px;
+    }
+}
+
+/* Existing styles... */
+
+.library-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.search-container{
+    border:2px solid #2C3E50;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.book-list{
+    border: 2px solid #2C3E50;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.book-list li{
+    padding:5px 0;
+}
