@@ -1,0 +1,12 @@
+label {
+    /* labels are usually display: inline; with this trick we can set a line per input
+    with a semantic HTML */
+    display: block;
+    padding: 1rem 0;
+   }
+   #btn-calculate {
+    background:#8a897c;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+   }
