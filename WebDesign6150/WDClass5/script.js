@@ -41,10 +41,16 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     // Zipcode validation (only if checkbox is checked)
     if (usResident && document.getElementById("zipcodeField").classList.contains("hidden") === false) {
-        if (!/^[0-9]{5}$/.test(zipcode)) {
-            document.getElementById("zipcodeError").textContent = "Enter a valid 5-digit zipcode.";
+        // if (!/^[0-9]{5}$/.test(zipcode)) {
+        //     document.getElementById("zipcodeError").textContent = "Enter a valid 5-digit zipcode.";
+        //     isValid = false;
+        // }
+
+        if (!/^[0-9]{5}$/.test(zipcode) || zipcode === "00000") {
+            document.getElementById("zipcodeError").textContent = "Enter a valid 5-digit zipcode (not '00000').";
             isValid = false;
         }
+        
     }
 
     // Password validation

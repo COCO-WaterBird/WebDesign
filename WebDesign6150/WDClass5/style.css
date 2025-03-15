@@ -133,3 +133,15 @@ button:hover {
     border: none; /* Remove the border */
 }
 
+
+
+label.checkbox-label {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="checkbox"] {
+    margin: 0; /* Remove default margin */
+}
+
