@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: white; /* Set default font color to white */
+   
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.form-container {
+    width: 100%;
+    z-index: 2;
+}
+
+h2 {
+    color: white; /* Set header color to white */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* Set label color to white */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for inputs */
+    color: white; /* Set input text color to white */
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* #successMessage {
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* .image-container {
+    position: absolute;
+    top: 0;
+    right: 28rex;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}  */
+
+/* Updated image container */
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: blur(8x); /* Add a slight blur effect */
+}
+
+
+
+
+#successMessage {
+    color: rgb(54, 200, 24);
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: transparent; /* Remove the green background */
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    border: none; /* Remove the border */
+}
+
+
+
+label.checkbox-label {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="checkbox"] {
+    margin: 0; /* Remove default margin */
+}
+
