@@ -28,7 +28,7 @@
                     <input type="checkbox" id="usResident">
                 </div>
 
-                <div id="zipcodeField" class="hidden form-group">
+                <!-- <div id="zipcodeField" class="hidden form-group">
                     <label for="zipcode">Zipcode:</label>
                     <input type="text" id="zipcode" oninput="fetchZipcodeData()" >
                     <span class="error" id="zipcodeError"></span>
@@ -47,9 +47,28 @@
                     <label for="state">State:</label>
                     <input type="text" id="state" >
                     <span class="error" id="stateError"></span>
+                </div> -->
+
+                <div id="zipcodeField" class="form-group">
+                    <label for="un_name">University:</label>
+                    <input type="text" id="un_name" oninput="fetchUniversityData()" placeholder="Enter university name">
+                    <span class="error" id="un_namecodeError"></span>
                 </div>
-
-
+                
+                <div id="zipcodeInfo" class="hidden form-group">
+                    <label for="web_page">Web Page:</label>
+                    <input type="text" id="web_page" readonly> <!-- Set as readonly to prevent editing -->
+                    <span class="error" id="web_pageError"></span>
+                </div>
+                
+                <span class="error" id="zipcodeError"></span>
+                
+                <!-- Hidden section for displaying fetched information -->
+                <div id="zipcodeInfo" class="hidden">
+                    <p>City: <span id="city"></span></p>
+                    <p>State: <span id="state"></span></p>
+                </div>
+                
 
 
                 <div class="form-group">
