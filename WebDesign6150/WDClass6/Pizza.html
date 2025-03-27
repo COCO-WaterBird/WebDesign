@@ -16,67 +16,45 @@
                     <input type="text" id="name" required>
                     <span class="error" id="nameError"></span>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="year">Year of Birth:</label>
                     <input type="number" id="year" required>
                     <span class="error" id="yearError"></span>
                 </div>
-
-                <div class="form-group">
-                    <label for="usResident" class="checkbox-label">Do you live in the United States?</label>
+    
+                <div id="usResidentField" class="form-group">
+                    <label for="usResident">Do you live in the United States?</label>
                     <input type="checkbox" id="usResident">
                 </div>
-
-                <!-- <div id="zipcodeField" class="hidden form-group">
-                    <label for="zipcode">Zipcode:</label>
-                    <input type="text" id="zipcode" oninput="fetchZipcodeData()" >
-                    <span class="error" id="zipcodeError"></span>
-                </div>
-
-
-
-
-                <div class="form-group">
-                    <label for="city">City:</label>
-                    <input type="text" id="city" >
-                    <span class="error" id="cityError"></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="state">State:</label>
-                    <input type="text" id="state" >
-                    <span class="error" id="stateError"></span>
-                </div> -->
-
-                <div id="zipcodeField" class="form-group">
+    
+                <div id="zipcodeField" class="hidden form-group">
                     <label for="un_name">University:</label>
                     <input type="text" id="un_name" oninput="fetchUniversityData()" placeholder="Enter university name">
                     <span class="error" id="un_namecodeError"></span>
                 </div>
-                
+    
                 <div id="zipcodeInfo" class="hidden form-group">
                     <label for="web_page">Web Page:</label>
                     <input type="text" id="web_page" readonly> <!-- Set as readonly to prevent editing -->
                     <span class="error" id="web_pageError"></span>
                 </div>
-                
+    
                 <span class="error" id="zipcodeError"></span>
-                
+    
                 <!-- Hidden section for displaying fetched information -->
-                <div id="zipcodeInfo" class="hidden">
+                <div id="zipcodeLocationInfo" class="hidden">
                     <p>City: <span id="city"></span></p>
                     <p>State: <span id="state"></span></p>
+                    <p id="country"></p>
                 </div>
-                
-
-
+    
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" required>
                     <span class="error" id="passwordError"></span>
                 </div>
-
+    
                 <div class="form-group">
                     <label>Preferred Type of Pizza:</label>
                     <div class="radio-group">
@@ -86,7 +64,7 @@
                     </div>
                     <span class="error" id="pizzaError"></span>
                 </div>
-
+    
                 <button type="submit">Submit</button>
                 <p id="successMessage" class="hidden">Accepted</p>
             </form>
@@ -95,12 +73,7 @@
             <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=1024x1024&w=is&k=20&c=faq73viCFGvfpKxcBuHcOI8kyT99B-p-jScipke-VuQ=" alt="Pizza" class="pizza-image">
         </div>
     </div>
-
-    <div id="zipcodeInfo" class="hidden">
-        <p id="city"></p>
-        <p id="state"></p>
-        <p id="country"></p>
-    </div>
+    
 
     
     <script src="script.js"></script>
