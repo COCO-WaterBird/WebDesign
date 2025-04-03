@@ -1,0 +1,79 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#book-list {
+    padding: 20px;
+}
+
+#books {
+    list-style: none;
+    padding: 0;
+}
+
+#books li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#books li:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#book-details, #create-book-form {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #28a745;
+}
+
+form button:hover {
+    background-color: #218838;
+}
